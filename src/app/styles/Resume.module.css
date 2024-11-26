@@ -1,0 +1,63 @@
+.resume {
+  font-family: Georgia, serif;
+  font-size: 10.5pt;
+  line-height: 1.2;
+  width: 8.5in;
+  padding: 1in;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.section {
+  margin-bottom: 1em;
+}
+
+.sectionTitleWrapper {
+  display: flex;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.subsection {
+  margin-bottom: 0.5em;
+}
+
+.subsectionTitle {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.list {
+  list-style: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+.listItem {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.listItem::before {
+  content: '-'; /* Use a dash as the marker */
+  margin-right: 24px; /* Add spacing between dash and text */
+  color: inherit; /* Make dash color match the text */
+}
