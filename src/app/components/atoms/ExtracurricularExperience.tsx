@@ -23,15 +23,16 @@ const ExtracurricularExperience: React.FC<ExtracurricularExperienceProps> = ({
 
     const highlightedExperience = highlights.map((description) => {
         return (
-            <li className={globalResumeStyles.listItem}>
-                {description}
-            </li>
+            <div style={{ display: "flex" }}>
+                <span className={globalResumeStyles.bulletPoint}>-</span>
+                <div>{description}</div>
+            </div>
         )
     })
     return (
         <div className={globalResumeStyles.subsection}>
             <div>
-                <div className={globalResumeStyles.row}>
+                <div className={globalResumeStyles.row} style={{marginBottom: "0.3em"}}>
                     <div>
 
                         <span className={globalResumeStyles.subsectionTitle}>

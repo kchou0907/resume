@@ -1,9 +1,10 @@
-import Resume from "./resumes/FullStack/Resume";
+import FullstackResume from "./resumes/Fullstack";
+
 
 export default function Home() {
   return (
     <div>
-      <Resume />
+      <FullstackResume />
     </div>
   );
 }

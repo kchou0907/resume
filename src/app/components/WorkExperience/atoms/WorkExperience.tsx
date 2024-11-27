@@ -25,9 +25,10 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 
     const highlightedExperience = highlights.map((description) => {
         return (
-            <li className={globalResumeStyles.listItem}>
-                {description}
-            </li>
+            <div style={{display: "flex"}}>
+                <span className={globalResumeStyles.bulletPoint}>-</span>
+                <div>{description}</div>
+            </div>
         )
     })
     return (

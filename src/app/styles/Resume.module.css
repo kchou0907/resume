@@ -1,9 +1,9 @@
 .resume {
   font-family: Georgia, serif;
   font-size: 10.5pt;
-  line-height: 1.2;
+  line-height: 1.08;
   width: 8.5in;
-  padding: 1in;
+  padding: 0.5in;
   margin: 0 auto;
   background-color: white;
   color: black;
@@ -25,6 +25,7 @@
 
 .sectionTitleWrapper {
   display: flex;
+  margin-bottom: 0.5em;
 }
 
 .sectionTitle {
@@ -50,13 +51,7 @@
   padding-left: 0; /* Remove default padding */
 }
 
-.listItem {
-  margin: 0;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.listItem::before {
+.bulletPoint {
   content: '-'; /* Use a dash as the marker */
   margin-right: 24px; /* Add spacing between dash and text */
   color: inherit; /* Make dash color match the text */
