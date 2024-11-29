@@ -3,13 +3,13 @@ import ExtracurricularExperience from "../../atoms/ExtracurricularExperience";
 
 const PersonalFinance: React.FC = () => {
     const highlights: string[] = [
-        `Self-hosted web app and data pipelines to migrate my financial data off
-        of 3rd party services`,
-        `Created data pipelines from Google Sheets using Google Apps Script 
+        `Engineered a self-hosted web app and data pipelines to securely 
+        migrate and manage personal finance data`,
+        `Automated data ingestion pipelines using Google Apps Script 
         (Javascript) and Pandas (Python)`,
-        `Created a self-hosted Linux web server using Nginx and Docker. 
-        Implemented synamic DNS, reverse proxy, auto-renewing SSL certificate, 
-        and an open-sourced finance web application`
+        `Deployed a Linux-based web server with Nginx and Docker, implementing 
+        features like dynamic DNS, reverse proxy, and auto-renewing SSL 
+        certificates to support an open-source financial web app`
     ]
     return (
         <ExtracurricularExperience

@@ -3,14 +3,15 @@ import WorkExperience from "../atoms/WorkExperience";
 
 const Meta: React.FC = () => {
     const highlightedExperiences: string[] = [
-        `Designed, built, and deployed a reconfigurable maintenance window for a
-        Kubernetes-backed, AWS-hosted JupyterHub data sanitization platform 
-        using Javascript and Docker`,
+        `Architected and deployed a reconfigurable maintenance window for a 
+        Kubernetes-backed JupyterHub platform on AWS, improving data 
+        sanitization workflows using JavaScript and Docker`,
         `Implemented rate limiting and query budgeting for an API product using 
         Hack (PHP), Python, and R`,
-        `Drove dogfooding for a Git extension by implementing error handling, 
-        fixing bugs, and creating user documentation. Utilized Python, Docker, 
-        Kubernetes, AWS Lambda, AWS S3, and AWS API Gateway`,
+        `Led dogfooding efforts for a Git extension by implementing error 
+        handling, resolving critical bugs, and creating comprehensive user 
+        documentation. Leveraged Docker, Kubernetes, AWS Lambda, S3, 
+        and API Gateway`,
     ];
 
     return (

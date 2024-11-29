@@ -3,14 +3,15 @@ import ExtracurricularExperience from "../../atoms/ExtracurricularExperience";
 
 const Dubhacks: React.FC = () => {
     const highlights: string[] = [
-        `Raised over $60,000 by approaching over 300 companies to fund our 
-        annual flagship hackathon`,
-        `Wrote scripts to automate sending email reminders, updating to-do 
-        lists, and keep track of sponsorship effots using Google Sheets and 
-        Google Apps Script (Javascript)`,
-        `Collaborated with event directors and 5+ cross-functional teams in the 
-        coordination and execution of the premier collegiate hackathon in the 
-        Pacific Northwest, which attracted over 1000 participants`
+        `Spearheaded fundraising efforts, securing over $60,000 in sponsorships 
+        by engaging with over 300 companies to support a flagship hackathon 
+        event`,
+        `Automated sponsorship operations by scripting email reminders, to-do 
+        list updates, and sponsorship tracking in Google Sheets using Google 
+        Apps Script (JavaScript)`,
+        `Coordinated with event directors and 5+ cross-functional teams to host 
+        an event with over 1,000 participants, ensuring smooth execution of 
+        workshops, panels, and competitions`
     ]
     return (
         <ExtracurricularExperience
