@@ -4,6 +4,7 @@ import { useState } from "react";
 import FullstackResume from "./resumes/Fullstack";
 import ResumeSwitcher from "./components/atoms/ResumeSwitcher";
 import FrontendResume from "./resumes/Frontend";
+import BackendResume from "./resumes/Backend";
 
 const ResumeTypes = Object.freeze({
   FULL: "full",
@@ -30,6 +31,7 @@ export default function Home() {
       displayedResume = <FrontendResume />;
       break;
     case ResumeTypes.BACKEND:
+      displayedResume = <BackendResume />;
       break;
     case ResumeTypes.PM:
       break;

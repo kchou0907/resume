@@ -17,8 +17,8 @@ const Homelab: React.FC = () => {
             roleName="Personal Project"
             startMonth="Dec."
             startYear="2022"
-            endMonth="May."
-            endYear="2023"
+            endMonth="Present"
+            endYear=""
             highlights={highlights}
         />
     )
