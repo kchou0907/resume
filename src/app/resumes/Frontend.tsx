@@ -10,6 +10,7 @@ import Nordstrom from "../components/WorkExperience/components/Nordstrom";
 import Spotty from "../components/Projects/atoms/Spotty";
 import Dubhacks from "../components/LeadershipExperience/atoms/Dubhacks";
 import Curina from "../components/WorkExperience/components/Curina";
+import { ResumeTypes } from "../page";
 
 const FrontendResume: React.FC = () => {
     return (
@@ -28,7 +29,7 @@ const FrontendResume: React.FC = () => {
             <SectionTitle title="Work Experience" />
     
             <div>
-              <Parthean />
+              <Parthean bias={ResumeTypes.FRONTEND}/>
               <Meta />
               <Nordstrom />
               <Curina />

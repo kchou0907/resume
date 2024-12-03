@@ -2,18 +2,21 @@ import { ResumeType, ResumeTypes } from "@/app/page";
 import React from "react";
 
 type ResumeSwitcherProps = {
-    setOpenedResume: (resumeType: ResumeType) => void; // Define the type for the function
+    openedResume: string;
+    setOpenedResume: (resumeType: ResumeType) => void;
 };
 
-const ResumeSwitcher: React.FC<ResumeSwitcherProps> = ({ setOpenedResume }) => {
+const ResumeSwitcher: React.FC<ResumeSwitcherProps> = ({ openedResume, setOpenedResume }) => {
     const buttons = Object.keys(ResumeTypes).map((type, index) => {
         const val = ResumeTypes[type as keyof typeof ResumeTypes];
+        const selected = openedResume === val;
         return (
             <span
                 onClick={() => setOpenedResume(val)}
                 key={`resume-type-${index}`}
                 style={{
-                    cursor: "pointer"
+                    cursor: "pointer",
+                    color: selected ? "red" : "white"
                 }}
             >
                 {type}

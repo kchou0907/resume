@@ -10,7 +10,7 @@ const ResumeTypes = Object.freeze({
   FULL: "full",
   FRONTEND: "frontend",
   BACKEND: "backend",
-  PM: "product manager",
+  // PM: "product manager",
 } as const);
 
 type ResumeType = typeof ResumeTypes[keyof typeof ResumeTypes];
@@ -33,12 +33,15 @@ export default function Home() {
     case ResumeTypes.BACKEND:
       displayedResume = <BackendResume />;
       break;
-    case ResumeTypes.PM:
-      break;
+    // case ResumeTypes.PM:
+    //   break;
   }
   return (
     <div>
-      <ResumeSwitcher setOpenedResume={setOpenedResume} />
+      <ResumeSwitcher
+        openedResume={openedResume}
+        setOpenedResume={setOpenedResume}
+      />
       {displayedResume}
     </div>
   );

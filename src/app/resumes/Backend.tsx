@@ -10,6 +10,7 @@ import Nordstrom from "../components/WorkExperience/components/Nordstrom";
 import Dubhacks from "../components/LeadershipExperience/atoms/Dubhacks";
 import Homelab from "../components/Projects/atoms/Homelab";
 import ForTheBiscuit from "../components/Projects/atoms/ForTheBiscuit";
+import { ResumeTypes } from "../page";
 
 const BackendResume: React.FC = () => {
   return (
@@ -28,7 +29,7 @@ const BackendResume: React.FC = () => {
         <SectionTitle title="Work Experience" />
 
         <div>
-          <Parthean />
+          <Parthean bias={ResumeTypes.BACKEND}/>
           <Meta />
           <Nordstrom />
         </div>
@@ -42,7 +43,7 @@ const BackendResume: React.FC = () => {
 
       <div className={globalResumeStyles.section}>
         <SectionTitle title="Leadership Experience" />
-        <Dubhacks />
+        <Dubhacks bias={ResumeTypes.BACKEND}/>
       </div>
     </div>
   );
