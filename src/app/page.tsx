@@ -1,10 +1,43 @@
-import FullstackResume from "./resumes/Fullstack";
+'use client'
 
+import { useState } from "react";
+import FullstackResume from "./resumes/Fullstack";
+import ResumeSwitcher from "./components/atoms/ResumeSwitcher";
+import FrontendResume from "./resumes/Frontend";
+
+const ResumeTypes = Object.freeze({
+  FULL: "full",
+  FRONTEND: "frontend",
+  BACKEND: "backend",
+  PM: "product manager",
+} as const);
+
+type ResumeType = typeof ResumeTypes[keyof typeof ResumeTypes];
+
+export { ResumeTypes };
+export type { ResumeType };
 
 export default function Home() {
+
+  const [openedResume, setOpenedResume] = useState<ResumeType>(ResumeTypes.FULL);
+
+  let displayedResume = <FullstackResume />
+  switch (openedResume) {
+    case ResumeTypes.FULL:
+      displayedResume = <FullstackResume />;
+      break;
+    case ResumeTypes.FRONTEND:
+      displayedResume = <FrontendResume />;
+      break;
+    case ResumeTypes.BACKEND:
+      break;
+    case ResumeTypes.PM:
+      break;
+  }
   return (
     <div>
-      <FullstackResume />
+      <ResumeSwitcher setOpenedResume={setOpenedResume} />
+      {displayedResume}
     </div>
   );
 }

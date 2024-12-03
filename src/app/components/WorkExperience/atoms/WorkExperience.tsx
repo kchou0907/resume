@@ -23,9 +23,9 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
     highlights,
 }) => {
 
-    const highlightedExperience = highlights.map((description) => {
+    const highlightedExperience = highlights.map((description, index) => {
         return (
-            <div style={{display: "flex"}}>
+            <div style={{display: "flex"}} key={`work-highlight-${index}`}>
                 <span className={globalResumeStyles.bulletPoint}>-</span>
                 <div>{description}</div>
             </div>

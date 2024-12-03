@@ -19,3 +19,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media print {
+  .resumeSwitcher {
+      display: none !important;
+  }
+
+  nextjs-portal {
+    display: none;
+  }
+}

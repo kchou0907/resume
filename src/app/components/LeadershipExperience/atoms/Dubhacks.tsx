@@ -11,7 +11,7 @@ const Dubhacks: React.FC = () => {
         Apps Script (JavaScript)`,
         `Coordinated with event directors and 5+ cross-functional teams to host 
         an event with over 1,000 participants, ensuring smooth execution of 
-        workshops, panels, and competitions`
+        workshops, panels, and competitions`,
     ]
     return (
         <ExtracurricularExperience

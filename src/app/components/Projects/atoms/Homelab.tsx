@@ -1,7 +1,7 @@
 import React from "react";
 import ExtracurricularExperience from "../../atoms/ExtracurricularExperience";
 
-const PersonalFinance: React.FC = () => {
+const Homelab: React.FC = () => {
     const highlights: string[] = [
         `Engineered a self-hosted web app and data pipelines to securely 
         migrate and manage personal finance data`,
@@ -13,7 +13,7 @@ const PersonalFinance: React.FC = () => {
     ]
     return (
         <ExtracurricularExperience
-            activityName="Personal Finance"
+            activityName="Homelab"
             roleName="Personal Project"
             startMonth="Dec."
             startYear="2022"
@@ -24,4 +24,4 @@ const PersonalFinance: React.FC = () => {
     )
 }
 
-export default PersonalFinance
+export default Homelab

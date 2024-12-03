@@ -21,9 +21,12 @@ const ExtracurricularExperience: React.FC<ExtracurricularExperienceProps> = ({
     highlights
 }) => {
 
-    const highlightedExperience = highlights.map((description) => {
+    const highlightedExperience = highlights.map((description, index) => {
         return (
-            <div style={{ display: "flex" }}>
+            <div
+                style={{ display: "flex" }}
+                key={`extracurricular-experience-${index}`}
+            >
                 <span className={globalResumeStyles.bulletPoint}>-</span>
                 <div>{description}</div>
             </div>
@@ -32,7 +35,7 @@ const ExtracurricularExperience: React.FC<ExtracurricularExperienceProps> = ({
     return (
         <div className={globalResumeStyles.subsection}>
             <div>
-                <div className={globalResumeStyles.row} style={{marginBottom: "0.3em"}}>
+                <div className={globalResumeStyles.row} style={{ marginBottom: "0.3em" }}>
                     <div>
 
                         <span className={globalResumeStyles.subsectionTitle}>
