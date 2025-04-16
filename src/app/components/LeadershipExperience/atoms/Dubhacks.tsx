@@ -13,13 +13,6 @@ const Dubhacks: React.FC<SweExperienceBias> = ({ bias = ResumeTypes.FULL }) => {
         workshops, panels, and competitions`,
     ]
 
-    if (bias === ResumeTypes.BACKEND) {
-        highlights.push(
-            `Automated sponsorship operations by scripting email reminders, to-do 
-            list updates, and sponsorship tracking in Google Sheets using Google 
-            Apps Script (JavaScript)`,
-        )
-    }
     return (
         <ExtracurricularExperience
             activityName="DubHacks"

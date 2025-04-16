@@ -19,7 +19,7 @@ const Meta: React.FC = () => {
             companyName="Meta"
             startMonth="Aug."
             startYear="2022"
-            endMonth="Apr."
+            endMonth="June"
             endYear="2023"
             roleName="Software Engineer"
             location="Seattle, WA"

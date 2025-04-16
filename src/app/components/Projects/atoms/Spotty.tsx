@@ -3,14 +3,12 @@ import ExtracurricularExperience from "../../atoms/ExtracurricularExperience";
 
 const Spotty: React.FC = () => {
     const highlights: string[] = [
-        `Developed a full-stack web app enabling users to access 
+        `Built a full-stack web app enabling users to access 
         crowdsourced reviews of public restrooms`,
-        `Designed and implemented a responsive map and location list in the 
-        frontend using React, with a scalable backend powered by Node.js, 
-        Express.js, and Firebase`,
-        `Collaborated cross-functionally with a Product Manager, Data Lead, and 
-        Design Lead to scope and deliver new features, improving user engagement 
-        and accessibility`
+        `Developed a responsive map and location list with React, backed by 
+        Node.js, Express.js, and Firebase`,
+        `Partnered with product, data, and design leads to deliver features 
+        that enhanced engagement and accessibility`
     ]
     return (
         <ExtracurricularExperience
