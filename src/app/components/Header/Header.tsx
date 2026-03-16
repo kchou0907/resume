@@ -9,7 +9,7 @@ const Header: React.FC = () => {
             <div className={styles.name}>Kevin Chou</div>
             <div className={styles.contactInfo}>
                 <div className="address">
-                    500 W 110th St, New York, NY
+                    45 Lansing St, San Francisco, CA
                 </div>
                 <div className={`${styles.row}`}>
                     <span>

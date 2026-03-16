@@ -9,13 +9,13 @@ const SkillSummary: React.FC = () => {
                 <SectionTitle title="Skill Summary"/>
                 <ul>
                     <li className={globalResumeStyles.listItem}>
-                        Languages: Java, Python, Javascript, SQL, Hack/PHP, R, Go
+                        Languages: Java, Javascript, Go, SQL, Python, Hack/PHP
                     </li>
                     <li className={globalResumeStyles.listItem}>
-                        Frameworks: Bootstrap, JQuery, Express.js, Node.js, Mongoose, Shiny, Dplyr, Ggplot2
+                        Frameworks: React, JQuery, Express.js, Node.js, Mongoose
                     </li>
                     <li className={globalResumeStyles.listItem}>
-                        Tools: Kubernetes, Firebase, Docker, Git, AWS, Digital Ocean, Terraform, Ansible
+                        Tools: Kubernetes, Firebase, Docker, Git, GCP, AWS, Digital Ocean, Terraform, Ansible
                     </li>
                 </ul>
             </div>

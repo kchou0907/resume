@@ -1,27 +1,41 @@
 import React from "react";
 import globalResumeStyles from "../../../styles/Resume.module.css";
 
-interface WorkExperienceProps {
+interface BaseWorkExperienceProps {
     companyName: string;
     roleName: string;
     startMonth: string;
     startYear: string;
-    endMonth: string;
-    endYear: string;
     location: string;
     highlights: string[];
 }
 
-const WorkExperience: React.FC<WorkExperienceProps> = ({
-    companyName,
-    roleName,
-    startMonth,
-    startYear,
-    endMonth,
-    endYear,
-    location,
-    highlights,
-}) => {
+type WorkExperienceProps = BaseWorkExperienceProps & (
+    | {
+        isCurrentPosition: true;
+        endMonth?: never;
+        endYear?: never;
+    }
+    | {
+        isCurrentPosition?: false;
+        endMonth: string;
+        endYear: string;
+    }
+);
+
+const WorkExperience: React.FC<WorkExperienceProps> = (props) => {
+    const {
+        companyName,
+        roleName,
+        startMonth,
+        startYear,
+        location,
+        highlights,
+    } = props;
+
+    const endDate = props.isCurrentPosition
+        ? "Present"
+        : `${props.endMonth} ${props.endYear}`;
 
     const highlightedExperience = highlights.map((description, index) => {
         return (
@@ -36,7 +50,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
             <div>
                 <div className={globalResumeStyles.row}>
                     <div className={globalResumeStyles.subsectionTitle}>{companyName}</div>
-                    <div>{startMonth} {startYear} - {endMonth} {endYear}</div>
+                    <div>{startMonth} {startYear} - {endDate}</div>
                 </div>
 
                 <div className={globalResumeStyles.row}>

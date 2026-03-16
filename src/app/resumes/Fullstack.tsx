@@ -6,10 +6,9 @@ import SkillSummary from "../components/SkillSummary/SkillSummary";
 import SectionTitle from "../components/atoms/SectionTitle";
 import Parthean from "../components/WorkExperience/components/Parthean";
 import Meta from "../components/WorkExperience/components/Meta";
-import Nordstrom from "../components/WorkExperience/components/Nordstrom";
 import Spotty from "../components/Projects/atoms/Spotty";
-import Dubhacks from "../components/LeadershipExperience/atoms/Dubhacks";
 import Homelab from "../components/Projects/atoms/Homelab";
+import Meta_IC4 from "../components/WorkExperience/components/Meta_IC4";
 
 const FullstackResume: React.FC = () => {
   return (
@@ -28,9 +27,9 @@ const FullstackResume: React.FC = () => {
         <SectionTitle title="Work Experience" />
 
         <div>
+          <Meta_IC4 />
           <Parthean />
           <Meta />
-          <Nordstrom />
         </div>
       </div>
 
@@ -38,11 +37,6 @@ const FullstackResume: React.FC = () => {
         <SectionTitle title="Projects" />
         <Homelab />
         <Spotty />
-      </div>
-
-      <div className={globalResumeStyles.section}>
-        <SectionTitle title="Leadership Experience" />
-        <Dubhacks />
       </div>
     </div>
   );
