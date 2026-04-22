@@ -3,16 +3,10 @@ import WorkExperience from "../atoms/WorkExperience";
 
 const Meta_IC4: React.FC = () => {
   const highlightedExperiences: string[] = [
-    `Led engineering for the Threads youth ads graduation system, launching 
-        compliance flows that notify users upon turning 18 of expanded ad data 
-        usage; rolled out to 100% of global traffic.`,
-    `Onboarded Threads to Meta’s Youth Ads eligibility platform, enforcing 
-        age-based ad serving policies; validated rollout correctness through 
-        monitoring and metrics analysis to de-risk Threads monetization launches.`,
-    `Architected and implemented the EU “Subscription for No Ads” (SNA) 
-        graduation flow, integrating Threads with the SNA platform to enable 
-        compliant monetization for EU users turning 18; brought system to 
-        production launch readiness.`,
+    `Led end-to-end development of Threads youth ads graduation system, launching age-based ad experiences to 650K+ users and enabling monetization for users transitioning to full ads eligibility`,
+    `Drove phased global rollout (RoW + EU), achieving >99.9% gating correctness with no measurable regression in revenue or engagement metrics`,
+    `Designed compliance systems for EU/UK predicted teens, enforcing stricter ad restrictions under GDPR/DSA`,
+    `Built monitoring and validation infrastructure ensuring correct ad state transitions across FB, Instagram, and Threads; defined compliance metrics with data engineering for real-time anomaly detection`
   ];
 
   return (
